@@ -1,0 +1,29 @@
+.sidebar-container {
+  height: 100vh;
+  background-color: #fff;
+  width: auto;
+  border-radius: 10px;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px 0px;
+}
+
+.sidebar {
+  margin: 10px;
+}
+
+
+
+
+
+.content {
+  margin: 10px;
+}

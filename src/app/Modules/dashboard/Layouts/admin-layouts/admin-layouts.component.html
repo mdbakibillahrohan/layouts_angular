@@ -1,0 +1,11 @@
+<div class="admin-layouts-wrap">
+  <div class="nav-sidebar">
+    <app-sidebar [toggle]="sidebarToggle"></app-sidebar>
+    <div>
+      <app-navbar (sideBarToggleEmit)="sidebarToggleFunction($event)"></app-navbar>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<a routerLink="dashboard" class="" [className]="IsActive==true?'sidebar-element active':'sidebar-element'">
+  <div style="display: flex; align-items:center">
+    <mat-icon class="sidebar-element-icon">{{Icon}}</mat-icon>
+    <span>{{Name}}</span>
+  </div>
+
+  <mat-icon *ngIf="List.length>0">arrow_right_alt</mat-icon>
+
+</a>

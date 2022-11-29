@@ -1,0 +1,20 @@
+<div class="sidebar">
+
+  <mat-drawer-container class="sidebar-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" [opened]="true" mode="side">
+      <div class="logo">
+        <img src="../../../../../assets/gta-logo.png" alt="">
+      </div>
+      <app-dashboard-side-bar-element [IsActive]="true" [Icon]="'home'" [Name]="'Dashboard'" [List]="DashboardElement">
+      </app-dashboard-side-bar-element>
+      <app-dashboard-side-bar-element [Icon]="'assignment_late'" [Name]="'Tickets'" [List]="DashboardElement">
+      </app-dashboard-side-bar-element>
+      <app-dashboard-side-bar-element [Icon]="'home'" [Name]="'Dashboard'" [List]="DashboardElement">
+      </app-dashboard-side-bar-element>
+      <app-dashboard-side-bar-element [Icon]="'home'" [Name]="'Dashboard'" [List]="DashboardElement">
+      </app-dashboard-side-bar-element>
+
+    </mat-drawer>
+  </mat-drawer-container>
+
+</div>
