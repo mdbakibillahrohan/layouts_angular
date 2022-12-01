@@ -12,6 +12,10 @@ export class DashboardSideBarElementComponent implements OnInit {
   @Input() Icon: string = "home";
   @Input() IsActive: boolean = false;
 
+  panelOpenState = false;
+
+
+
   constructor() { }
 
   ngOnInit(): void {

@@ -11,10 +11,14 @@ export class NavbarComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
   }
-
-
+  isCollapsed = false;
   sideBarToggle() {
     this.sideBarToggleEmit.emit("toggled");
+    if (this.isCollapsed == false) {
+      this.isCollapsed = true;
+    } else {
+      this.isCollapsed = false;
+    }
   }
 
 }

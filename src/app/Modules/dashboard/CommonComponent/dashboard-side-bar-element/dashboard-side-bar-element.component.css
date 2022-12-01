@@ -4,10 +4,18 @@
   align-items: center;
   justify-content: space-between;
   width: 200px;
-  margin-left: 15px;
   padding: 10px 15px;
   color: #000;
 }
+
+.sidebar-element:hover {
+  background-color: #F7F6F4;
+}
+
+.not-exapnded {
+  margin-left: 25px;
+}
+
 
 .active {
   background-color: #F7F6F4;
@@ -17,4 +25,13 @@
 
 .sidebar-element .sidebar-element-icon {
   margin-right: 10px;
+}
+
+.mat-expansion-panel {
+  box-shadow: none;
+  margin: 5px 0px;
+}
+
+.child-elements {
+  margin-left: 20px;
 }

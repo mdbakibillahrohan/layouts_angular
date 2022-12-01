@@ -13,13 +13,16 @@ export class SidebarComponent implements OnInit {
 
   DashboardElement: any[] = [
     {
-      name: "Add Student",
+      name: "Add",
       route: "add-student",
+      icon: 'create_new_folder'
 
     },
+
     {
-      name: "List Student",
+      name: "List",
       route: "list-student",
+      icon: 'business'
     },
   ]
   constructor() { }

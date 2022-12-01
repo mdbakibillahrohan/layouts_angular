@@ -1,11 +1,15 @@
 .navbar {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 73vw;
   padding: 20px;
   background-color: #fff;
   margin: 10px;
   border-radius: 10px;
+}
+
+.isCollapsed {
+  width: 93vw;
 }
 
 .navigation {

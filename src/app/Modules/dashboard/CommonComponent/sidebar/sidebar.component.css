@@ -1,7 +1,6 @@
 .sidebar-container {
-  height: 100vh;
+  min-height: 97vh;
   background-color: #fff;
-  width: auto;
   border-radius: 10px;
 }
 
@@ -10,6 +9,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+  width: 20vw;
 }
 
 .example-sidenav {
