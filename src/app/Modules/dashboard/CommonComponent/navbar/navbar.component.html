@@ -1,4 +1,4 @@
-<div class="navbar" [className]="isCollapsed?'navbar isCollapsed':'navbar'">
+<div [className]="isCollapsed?'navbar isCollapsed':'navbar'">
   <div class="navigation">
 
     <button (click)="sideBarToggle()" mat-button>
@@ -8,6 +8,16 @@
   </div>
 
   <div class="profile">
+    <!-- <button mat-button>
 
+    </button> -->
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item>Profile</a>
+      <button mat-menu-item>Logout</button>
+    </mat-menu>
   </div>
+
 </div>

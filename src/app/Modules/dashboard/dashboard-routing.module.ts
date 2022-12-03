@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminLayoutsComponent } from './Layouts/admin-layouts/admin-layouts.component';
+import { AddStudentComponent } from './Pages/add-student/add-student.component';
 import { DashboardComponent } from './Pages/dashboard/dashboard.component';
 
 const routes: Routes = [
@@ -11,6 +12,10 @@ const routes: Routes = [
       {
         path: "dashboard",
         component: DashboardComponent
+      },
+      {
+        path: "add-student",
+        component: AddStudentComponent,
       }
     ]
   }

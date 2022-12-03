@@ -1,10 +1,11 @@
-<a style="width: 81%;" *ngIf="List.length==0 else expansionArea" routerLink="dashboard" class=""
-  [className]="IsActive?'sidebar-element not-exapnded active':'sidebar-element not-exapnded'">
-  <div style="display: flex; align-items:center">
+<a style="width: 100%;" *ngIf="List.length==0 else expansionArea" routerLink="dashboard"
+  [className]="'sidebar-element not-exapnded'">
+  <div [className]="IsActive?'active pl-5 py-3 w-full':'pl-5 py-1'" style="display: flex; align-items:center">
     <mat-icon class="sidebar-element-icon">{{Icon}}</mat-icon>
     <span>{{Name}}</span>
   </div>
 </a>
+
 
 <ng-template #expansionArea>
   <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -26,7 +27,7 @@
           <button mat-icon-button matListItemMeta>
             <mat-icon>{{link.icon}}</mat-icon>
           </button>
-          <a matListItemTitle href="...">{{ link.name }}</a>
+          <a matListItemTitle [routerLink]="link.route">{{ link.name }}</a>
         </mat-list-item>
       </mat-nav-list>
     </div>

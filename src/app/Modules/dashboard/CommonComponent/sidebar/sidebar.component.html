@@ -5,12 +5,11 @@
       <div class="logo">
         <img style="width: 70%;" src="../../../../../assets/gta-logo.png" alt="">
       </div>
-      <app-dashboard-side-bar-element [Icon]="'home'" [Name]="'Dashboard'">
+      <app-dashboard-side-bar-element [IsActive]="true" [Icon]="'home'" [Name]="'Dashboard'">
       </app-dashboard-side-bar-element>
-      <app-dashboard-side-bar-element [Icon]="'assignment_late'" [Name]="'Tickets'" [List]="DashboardElement">
+      <app-dashboard-side-bar-element [Icon]="'account_box'" [Name]="'Students'" [List]="StudentElement">
       </app-dashboard-side-bar-element>
-      <app-dashboard-side-bar-element [IsActive]="true" [Icon]="'add_shopping_cart'" [Name]="'Cash Receive'"
-        [List]="DashboardElement">
+      <app-dashboard-side-bar-element [Icon]="'add_shopping_cart'" [Name]="'Cash Receive'" [List]="DashboardElement">
       </app-dashboard-side-bar-element>
       <app-dashboard-side-bar-element [Icon]="'assignment'" [Name]="'Assignment'" [List]="DashboardElement">
       </app-dashboard-side-bar-element>

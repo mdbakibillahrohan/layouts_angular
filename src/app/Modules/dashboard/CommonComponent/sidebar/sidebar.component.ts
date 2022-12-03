@@ -24,6 +24,19 @@ export class SidebarComponent implements OnInit {
       route: "list-student",
       icon: 'business'
     },
+  ];
+
+  StudentElement: any[] = [
+    {
+      name: "Add Student",
+      route: "add-student",
+      icon: "create_new_folder"
+    },
+    {
+      name: "List of Students",
+      route: "list-student",
+      icon: 'business'
+    },
   ]
   constructor() { }
 

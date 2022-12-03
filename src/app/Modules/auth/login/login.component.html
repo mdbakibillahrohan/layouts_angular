@@ -1,1 +1,45 @@
-<p>login works!</p>
+<div class="wrap">
+  <div class="login flex justify-between">
+    <div class="left w-2/5">
+      <img class="w-3/6" src="../../../../assets/gta-logo.png" alt="">
+      <p class="text-lg headline">
+        <span class="text-2xl">An <b>ultimate solution</b></span> <br>
+        for Travel Agency
+      </p>
+      <form [formGroup]="loginForm" (ngSubmit)="login()" class="example-form">
+        <div>
+          <mat-form-field [style.width.px]=327 appearance="outline">
+            <mat-label>Email Address</mat-label>
+            <input formControlName="email" matInput>
+            <mat-error *ngIf="">Email is invalid</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field [style.width.px]=327 appearance="outline">
+            <mat-label>Password</mat-label>
+            <input formControlName="password" matInput [type]=" hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)=" hide=!hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+
+        <div class="flex justify-between align-middle my-5">
+          <mat-checkbox formControlName="remember" class="example-margin">Remember me!</mat-checkbox>
+          <a mat-flat-button>Forget Password</a>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" class="btn btn-login">Login</button>
+          <button class="btn btn-register">Register</button>
+        </div>
+      </form>
+      <span class="color-primary mt-9">&copy;GDS FLIGHT, 2022</span>
+    </div>
+
+    <div class="right">
+      <img src="../../../../assets/Login v1.3.1.png" alt="">
+    </div>
+  </div>
+</div>

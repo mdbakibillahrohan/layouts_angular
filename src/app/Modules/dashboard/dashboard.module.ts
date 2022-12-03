@@ -8,6 +8,8 @@ import { DashboardComponent } from './Pages/dashboard/dashboard.component';
 import { MaterialModule } from 'src/app/material/material.module';
 import { AdminLayoutsComponent } from './Layouts/admin-layouts/admin-layouts.component';
 import { DashboardSideBarElementComponent } from './CommonComponent/dashboard-side-bar-element/dashboard-side-bar-element.component';
+import { AddStudentComponent } from './Pages/add-student/add-student.component';
+import { TableComponent } from './CommonComponent/table/table.component';
 
 
 
@@ -17,7 +19,9 @@ import { DashboardSideBarElementComponent } from './CommonComponent/dashboard-si
     NavbarComponent,
     DashboardComponent,
     AdminLayoutsComponent,
-    DashboardSideBarElementComponent
+    DashboardSideBarElementComponent,
+    AddStudentComponent,
+    TableComponent
   ],
   imports: [
     CommonModule,

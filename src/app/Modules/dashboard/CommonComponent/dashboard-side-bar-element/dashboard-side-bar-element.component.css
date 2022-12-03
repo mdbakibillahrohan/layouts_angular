@@ -8,14 +8,15 @@
   color: #000;
 }
 
-.sidebar-element:hover {
-  background-color: #F7F6F4;
-}
+
 
 .not-exapnded {
-  margin-left: 25px;
+  padding-left: 21px;
 }
 
+.not-exapnded:hover {
+  background-color: #F7F6F4;
+}
 
 .active {
   background-color: #F7F6F4;
