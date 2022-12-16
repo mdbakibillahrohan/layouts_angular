@@ -25,11 +25,11 @@ export class LoginComponent implements OnInit {
   }
 
 
-  emailValidation() {
+  get emailValidation() {
     return this.loginForm.get('email');
   }
 
-  passwordValidation() {
+  get passwordValidation() {
     return this.loginForm.get('password');
   }
 

@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-sidebar',
@@ -10,6 +9,40 @@ export class SidebarComponent implements OnInit {
 
   @Input() toggle: boolean = false;
   @ViewChild('drawer') drawer: any;
+
+
+
+  SidebarElements: any[] = [
+    {
+      name: "Dashboard",
+      icon: 'home',
+      elements: [],
+    },
+
+    {
+      name: 'Students',
+      icon: 'account_box',
+      elements: [
+        {
+          name: "Add Student",
+          route: "add-student",
+          icon: "create_new_folder"
+        },
+        {
+          name: "List of Students",
+          route: "list-student",
+          icon: 'business'
+        },
+        {
+          name: "Edit Students",
+          route: "list-student",
+          icon: 'business'
+        },
+      ]
+    },
+  ];
+
+
 
   DashboardElement: any[] = [
     {
@@ -34,6 +67,11 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "List of Students",
+      route: "list-student",
+      icon: 'business'
+    },
+    {
+      name: "Edit Students",
       route: "list-student",
       icon: 'business'
     },

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StateService } from 'src/app/Services/state.service';
 
 @Component({
   selector: 'app-admin-layouts',
@@ -7,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminLayoutsComponent implements OnInit {
   sidebarToggle = false;
-  constructor() { }
+  constructor(public state: StateService) {
+  }
 
   ngOnInit(): void {
   }
+
+  ngOnChanges(): void {
+
+  }
+
+
 
   sidebarToggleFunction(value: string) {
     if (value == "toggled") {
@@ -21,6 +29,9 @@ export class AdminLayoutsComponent implements OnInit {
     }, 50);
   }
 
+  progressIndicatorToggle(data: boolean) {
+    this.state.isProgressing = data;
+  }
 
 
 }

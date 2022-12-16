@@ -5,13 +5,18 @@
       <div class="logo">
         <img style="width: 70%;" src="../../../../../assets/gta-logo.png" alt="">
       </div>
-      <app-dashboard-side-bar-element [IsActive]="true" [Icon]="'home'" [Name]="'Dashboard'">
+      <hr>
+      <!-- <app-dashboard-side-bar-element [IsActive]="true" [Icon]="'home'" [Name]="'Dashboard'">
       </app-dashboard-side-bar-element>
       <app-dashboard-side-bar-element [Icon]="'account_box'" [Name]="'Students'" [List]="StudentElement">
       </app-dashboard-side-bar-element>
       <app-dashboard-side-bar-element [Icon]="'add_shopping_cart'" [Name]="'Cash Receive'" [List]="DashboardElement">
       </app-dashboard-side-bar-element>
       <app-dashboard-side-bar-element [Icon]="'assignment'" [Name]="'Assignment'" [List]="DashboardElement">
+      </app-dashboard-side-bar-element> -->
+
+      <app-dashboard-side-bar-element *ngFor="let SidebarElement of SidebarElements" [Icon]="SidebarElement.icon"
+        [Name]="SidebarElement.name" [List]="SidebarElement.elements">
       </app-dashboard-side-bar-element>
 
     </mat-drawer>

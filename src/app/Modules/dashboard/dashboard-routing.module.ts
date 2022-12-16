@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminLayoutsComponent } from './Layouts/admin-layouts/admin-layouts.component';
 import { AddStudentComponent } from './Pages/add-student/add-student.component';
 import { DashboardComponent } from './Pages/dashboard/dashboard.component';
+import { ListStudentComponent } from './Pages/list-student/list-student.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,12 @@ const routes: Routes = [
       {
         path: "add-student",
         component: AddStudentComponent,
+      },
+      {
+        path: "list-student",
+        component: ListStudentComponent,
       }
+
     ]
   }
 ];

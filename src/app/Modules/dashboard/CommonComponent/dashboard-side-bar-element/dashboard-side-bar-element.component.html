@@ -1,6 +1,6 @@
-<a style="width: 100%;" *ngIf="List.length==0 else expansionArea" routerLink="dashboard"
-  [className]="'sidebar-element not-exapnded'">
-  <div [className]="IsActive?'active pl-5 py-3 w-full':'pl-5 py-1'" style="display: flex; align-items:center">
+<a style="width: 100%;" *ngIf="List.length==0 else expansionArea" [className]="'sidebar-element not-exapnded'">
+  <div [className]="IsActive?'active pl-5 py-3 w-full':'pl-5 py-1'"
+    style="display: flex; align-items:center; cursor: pointer;">
     <mat-icon class="sidebar-element-icon">{{Icon}}</mat-icon>
     <span>{{Name}}</span>
   </div>
@@ -11,7 +11,7 @@
   <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <a routerLink="dashboard" class="" [className]="IsActive==true?'sidebar-element active':'sidebar-element'">
+        <a [className]="IsActive==true?'sidebar-element active':'sidebar-element'">
           <div style="display: flex; align-items:center">
             <mat-icon class="sidebar-element-icon">{{Icon}}</mat-icon>
             <span>{{Name}}</span>

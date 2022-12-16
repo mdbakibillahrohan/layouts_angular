@@ -10,6 +10,9 @@ import { AdminLayoutsComponent } from './Layouts/admin-layouts/admin-layouts.com
 import { DashboardSideBarElementComponent } from './CommonComponent/dashboard-side-bar-element/dashboard-side-bar-element.component';
 import { AddStudentComponent } from './Pages/add-student/add-student.component';
 import { TableComponent } from './CommonComponent/table/table.component';
+import { ListStudentComponent } from './Pages/list-student/list-student.component';
+import { MatCellDefinationPipe } from 'src/app/Pipes/mat-cell-defination.pipe';
+import { CommonComponentModule } from 'src/app/common-component/common-component.module';
 
 
 
@@ -21,12 +24,15 @@ import { TableComponent } from './CommonComponent/table/table.component';
     AdminLayoutsComponent,
     DashboardSideBarElementComponent,
     AddStudentComponent,
-    TableComponent
+    TableComponent,
+    ListStudentComponent,
+    MatCellDefinationPipe
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    MaterialModule
+    MaterialModule,
+    CommonComponentModule
   ],
   exports: [
     DashboardRoutingModule,

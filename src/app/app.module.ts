@@ -8,6 +8,7 @@ import { DashboardModule } from './Modules/dashboard/dashboard.module';
 import { AuthModule } from './Modules/auth/auth.module';
 import { Router, RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatCellDefinationPipe } from './Pipes/mat-cell-defination.pipe';
 
 @NgModule({
   declarations: [
